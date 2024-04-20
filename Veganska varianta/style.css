@@ -21,6 +21,7 @@ notebook/pc:
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 .paticka {
@@ -38,3 +39,112 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+.main {
+    background-image: url(images/salat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.svacina {
+    background-image: url(images/chlebicek.jpg);
+    
+}
+.mexicka {
+    background-image: url(images/tacos.jpg);
+    
+    
+}
+.lusteniny {
+    background-image: url(images/cizrna.jpg);
+    
+   
+}
+.burgry {
+    background-image: url(images/burger.jpg);
+    
+    
+}
+h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+}
+.svacina, .mexicka, .lusteniny, .burgry {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+
+.kontejner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nazev {
+    align-self: flex-end reverse;
+}
+
+@media (min-width: 600px)
+    {
+        .main {
+            min-height: 250px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        .small {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .svacina, .mexicka, .lusteniny, .burgry {
+            flex-basis: calc(100%/2);
+            padding: 20px;
+            min-height: 150px;
+        }
+        
+    }
+
+@media (min-width: 900px)
+    {
+        .main {
+            min-height: 400px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        .nabidka {
+            display: flex;
+            flex-direction: row;
+        }
+        .small {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .svacina, .mexicka, .lusteniny, .burgry {
+            flex-basis: calc(100%/2);
+            padding: 20px;
+            min-height: 200px;
+        }
+    }
